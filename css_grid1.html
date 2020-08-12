@@ -1,0 +1,128 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+         
+        }
+
+        p{
+            color: red;
+        }
+
+        div.page {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 10fr 40px;
+            grid-template-areas: 'header header'
+                                 'menu mainContent'
+                                 'footer footer';
+        }
+
+        div.header {
+            text-align:center;
+            background-color: aqua;
+            grid-area: header;
+            margin-top: -40px;
+            font-size: 30px;
+           
+           
+        }
+
+        div.menu {
+            background-color: blanchedalmond;
+            grid-area: menu;
+            padding-left: 15px
+
+        }
+
+        div.mainContent {
+            background-color: blanchedalmond;
+            grid-area: mainContent;
+            padding-left: 20px;
+            padding-right: 30px;
+
+        }
+
+        div.footer {
+            background-color: lightgrey;
+            grid-area: footer;
+
+            text-align: right;
+          padding-right: 15px;
+          padding-top: 15px;
+
+        }
+
+
+        #p1 {
+            font-size: 20px;
+            margin-bottom: -20px;
+        }
+        #p2 {
+            font-size: 20px;
+            margin-bottom: -20px;
+        }
+        #p3 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <div class="header">
+            <h1>My Website</h1>
+        </div>
+
+        <div class="menu">
+            <h1 id="navi">Navigation</h1>
+            <p id="p1"><b>Home</b></p>
+            <p id="p2">About</p>
+            <p id="p3">Contact</p>
+        </div>
+
+        <div class="mainContent">
+            <h1>Home page</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed molestie odio dolor, ut dictum ligula porta vitae.
+                Proin in tristique neque, at cursus ligula. Fusce porta dapibus mauris.
+                Cras et nulla erat. Suspendisse eget nisl in diam feugiat elementum
+                laoreet et augue. Curabitur placerat tellus magna, volutpat finibus
+                ipsum egestas id. Donec finibus ultrices dapibus. Praesent magna
+                mauris, eleifend eget dolor ac, pretium sollicitudin tellus.
+                Phasellus quis scelerisque arcu, in blandit ipsum. 
+            </p>
+            <p>
+                Pellentesque et quam purus. Maecenas finibus euismod orci eget suscipit.
+                Vivamus id nisi sit amet purus facilisis rutrum eget vitae orci.
+                Cras dolor lacus, lacinia id fermentum ut, porta eget metus.
+                Nullam ut erat eu diam consequat ornare. Nullam in efficitur neque.
+                Nullam cursus quam id libero dignissim volutpat. Maecenas laoreet urna
+                eu turpis fringilla, vulputate eleifend sapien mattis.
+                Curabitur ut euismod leo, at egestas velit.
+            </p>
+            <p>
+                Donec pulvinar massa nec est aliquam, convallis porta arcu accumsan.
+                Nulla pellentesque quam nec dignissim ultrices.
+                Sed ornare fringilla magna et vestibulum. Integer quam mi,
+                sagittis quis sodales eu, hendrerit vel mi. Vestibulum et urna convallis
+                augue porttitor laoreet. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Vestibulum blandit ultricies
+                lorem, id sagittis felis vestibulum at.
+            </p>
+        </div>
+
+
+        <div class="footer">
+        Copyright © 2020 Wooh
+        </div>
+
+    </div>
+</body>
+</html>
