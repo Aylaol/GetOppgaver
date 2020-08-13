@@ -14,18 +14,18 @@
         }
 
         div.page {
+            font-family: Verdana;
             height: 100vh;
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 250px 1fr;
             grid-template-rows: 80px 10fr 40px;
-            grid-template-areas: 'header header'
-                                 'menu mainContent'
-                                 'footer footer';
+            grid-template-areas: 'header header' 'menu mainContent' 'footer footer';
         }
 
         div.header {
             text-align:center;
-            background-color: aqua;
+            background-color: cadetblue;
+            color:white;
             grid-area: header;
             margin-top: -40px;
             font-size: 30px;
@@ -58,7 +58,12 @@
 
         }
 
-
+        #home {
+            font-size:40px;
+        }
+        #navi {
+            font-size:30px;
+        }
         #p1 {
             font-size: 20px;
             margin-bottom: -20px;
@@ -87,7 +92,7 @@
         </div>
 
         <div class="mainContent">
-            <h1>Home page</h1>
+            <h1 id="home">Home page</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Sed molestie odio dolor, ut dictum ligula porta vitae.
