@@ -1,0 +1,69 @@
+body {
+	background-color:burlywood;
+}
+svg {
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+.board {
+	fill:wheat;
+	stroke:black;
+	stroke-width:2;
+}
+.red {
+	fill:red;
+	stroke:black;
+	stroke-width:2;
+}
+.whiteC {
+	fill:white;
+	stroke:black;
+	stroke-width:2;
+}
+.green {
+	fill:green;
+	stroke:black;
+	stroke-width:2;
+}
+.yellow {
+	fill:yellow;
+	stroke:black;
+	stroke-width:2;
+}
+.blue {
+	fill:blue;
+	stroke:black;
+	stroke-width:2;
+
+}
+
+.squareW {
+	fill:white;
+	stroke:black;
+	stroke-width:2;
+}
+
+.squareG {
+	fill:green;
+	stroke:black;
+	stroke-width:2;
+}
+.squareB {
+	fill:blue;
+	stroke:black;
+	stroke-width:2;
+}
+
+.smallG {
+	fill:green;
+	stroke:black;
+	stroke-width:2;
+}
+
+.smallR {
+	fill:red;
+	stroke:black;
+	stroke-width:2;
+}
