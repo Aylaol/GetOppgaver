@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="kode.css"/>
+    <title></title>
+</head>
+<body>
+
+
+    
+
+
+    <div class="page">
+        <button onclick="en(1)">1</button>
+        <button onclick="en(2)">2</button>
+        <button onclick="en(3)">3</button>
+        <button onclick="en(4)">4</button>
+        <button onclick="en(5)">5</button>
+        <button onclick="en(6)">6</button>
+        <button onclick="en(7)">7</button>
+        <button onclick="en(8)">8</button>
+        <button onclick="en(9)">9</button>
+    </div>
+
+    <div id="las">:</div>
+
+
+    <script>
+        function en(tall) {
+            document.getElementById('las').innerHTML += tall;
+        }
+
+    </script>
+</body>
+</html>
