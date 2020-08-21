@@ -6,16 +6,15 @@
     <title></title>
 </head>
 <body onload="testLoad()">
-
- <div id="testTo"><p></p></div>
+    
+    <div id="testTo"><p></p></div>
     
     <div id="testEn"></div>
 
-    
+    <img src="bird.png" alt="Green bird" width="500" height="500" />
+
     <script>
-
         document.getElementById('testTo').innerHTML = '-On Load Uten "Function"-' + new Date().toTimeString();
-
         function testLoad() {
             document.getElementById('testEn').innerHTML = '-On Load-' + new Date().toTimeString();
         }
