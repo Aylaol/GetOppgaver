@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input id="hoyde" type="range" min="1" max="1000" step="1" oninput="showDiv()"/>
+
+    <input id="bredde" type="range" min="1" max="1000" step="1" oninput="showDiv()" />
+
+   
+
+    <div id="resultat"></div>
+    <div id="resultatHtml" style="font-family:verdana"></div>
+
+    <script>
+        var resultatDiv = document.getElementById('resultat');
+        var resultatHtmlDiv = document.getElementById('resultatHtml');
+        var hoyde = document.getElementById('hoyde');
+        var bredde = document.getElementById('bredde');
+
+        showDiv();
+
+        function showDiv() {
+            resultatDiv.innerHTML = '<div style="'
+                + 'background-color:' + 'green;'
+                + 'height:' + hoyde.value + 'px;'
+                + 'width:' + bredde.value + 'px;'
+                + '">' +
+                '</div>';
+            resultatHtmlDiv.innerText = resultatDiv.innerHTML;
+        }
+    </script>
+</body>
+</html>
