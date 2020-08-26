@@ -1,0 +1,105 @@
+﻿﻿
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        //model
+        var sliderSize = 'width + height';
+        var sliderBorder;
+        var textBox;
+        var boxColor;
+        var borderColor;
+        var borderStyle;
+
+        //view
+        updateView();
+        function updateView() {
+            document.getElementById('app').innerHTML = `
+
+                <input
+                    type="range" 
+                    min="100" 
+                    max="500" 
+                    step="10" 
+                    value="${sliderSize || 250}"
+                    oninput="sliderSize = this.value; updateView();" />
+
+                    
+
+
+                    <br />    
+                    <input  
+                        type="text" 
+                        oninput="textBox = this.value; updateView();" 
+                        value="${textBox || 'Endre teksten!'}" />
+                    
+                    <br />
+                    <select 
+                        name="boxColor"
+                        onchange="boxColor = this.value; updateView();"
+                        value="selected">
+                            <option value="none">pick a color</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                    </select>
+
+
+                    <select  
+                        name="borderColor"
+                        onchange="borderColor" = this.value; updateView();"
+                        value="selected">
+                            <option value="none">Pick border color</option>
+                            <option value="black">Black border</option>
+                            <option value="grey">Grey border</option>
+                            <option value="red">Red border</option>
+                    </select>
+
+                   
+                    <select
+                        name="borderStyle"
+                        onchange="borderStyle" = this.value; updateView();"
+                        value="selected">
+                            <option value="none">Pick border style</option>
+                            <option value="dotted">Dotted border</option>
+                            <option value="solid">Solid border</option>
+                            <option value="double">Double border</option>
+                    </select>
+                    
+                    
+                    <div style= "background-color:${boxColor};
+                        width:${sliderSize};
+                        height:${sliderSize};
+                        border-style:${borderStyle};
+                        border-color:${borderColor};
+                        border-width:8px;"/>           
+            `;
+        }
+
+        
+
+        function register() {
+
+            //resultatDiv.innerHTML = '<div style="'
+            //  + 'background-color: ' + colorChooser.value + ';'
+            //  + 'width: ' + sizeSlider.value + 'px;'
+            //  + 'height: ' + sizeSlider.value + 'px;'
+            //  + 'border-style:' + 'solid;'
+            //  + 'border-width:' + '8' + 'px;'
+            //  + 'border-radius: ' + borderSlider.value + 'px;'
+            //    + 'border-color: ' + borderChooser.value + ';'
+            //    + '">' +
+            // textInput.value + '</div>';
+            // resultatHtmlDiv.innerText = resultatDiv.innerHTML;
+            updateView();
+        }
+    </script>
+</body>
+</html>

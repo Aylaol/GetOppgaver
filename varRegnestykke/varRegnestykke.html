@@ -22,7 +22,6 @@
         var bredde = document.getElementById('bredde');
 
         showDiv();
-
         function showDiv() {
             resultatDiv.innerHTML = '<div style="'
                 + 'background-color:' + 'green;'
@@ -31,6 +30,14 @@
                 + '">' +
                 '</div>';
             resultatHtmlDiv.innerText = resultatDiv.innerHTML;
+        }
+
+        calculate();
+        function calculate() {
+            var hoyde = parseInt(hoyde.value);
+            var bredde = parseInt(bredde.value);
+            resultatDiv.innerHTML = '' +
+                hoyde + '*' bredde
         }
     </script>
 </body>
