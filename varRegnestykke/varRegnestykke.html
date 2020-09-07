@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿< !DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -13,6 +13,7 @@
    
 
     <div id="resultat"></div>
+    
     <div id="resultatHtml" style="font-family:verdana"></div>
 
     <script>
@@ -22,23 +23,18 @@
         var bredde = document.getElementById('bredde');
 
         showDiv();
-        function showDiv() {
-            resultatDiv.innerHTML = '<div style="'
-                + 'background-color:' + 'green;'
-                + 'height:' + hoyde.value + 'px;'
-                + 'width:' + bredde.value + 'px;'
-                + '">' +
-                '</div>';
-            resultatHtmlDiv.innerText = resultatDiv.innerHTML;
+            function showDiv() {
+                resultatDiv.innerHTML = '<div style="'
+                    + 'background-color:' + 'green;'
+                    + 'height:' + hoyde.value + 'px;'
+                    + 'width:' + bredde.value + 'px;'
+                    + '">' + hoyde.value + '*' + bredde.value + '=' + hoyde.value * bredde.value
+                    + '<p>' + hoyde.value + '*' + '2' + '+' + bredde.value + '*' + '2' + '=' + (hoyde.value * 2 + bredde.value * 2) + '</p>' + '</div>';
+                resultatHtmlDiv.innerText = resultatDiv.innerHTML;
         }
 
-        calculate();
-        function calculate() {
-            var hoyde = parseInt(hoyde.value);
-            var bredde = parseInt(bredde.value);
-            resultatDiv.innerHTML = '' +
-                hoyde + '*' bredde
-        }
+   
+       
     </script>
 </body>
 </html>

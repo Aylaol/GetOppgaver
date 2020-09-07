@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="page()">
+
+        <div id="box"></div>
+        <div id="boxHtml"></div>
+    
+    <script>
+        var boxHtmlDiv = document.getElementById('boxHtml');
+        var boxDiv = document.getElementById('box');
+        var hoyde = 10 + Math.floor(Math.random() * 100);
+        var bredde = 10 +  Math.floor(Math.random() * 100);
+        var boxBorder = Math.floor(Math.random() * 10);
+        var boxColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        
+
+        function page() {
+            boxDiv.innerHTML = '<div style="'
+                + 'background-color:' + boxColor + ';'
+                + 'height:' + hoyde + 'px;'
+                + 'width:' + bredde + 'px;'
+                + 'border:' + boxBorder + 'px solid black;'
+                + '">' + '</div>';
+
+            boxHtmlDiv.innerText = 'Width: ' + bredde + 'px'
+                + ' Height: ' + hoyde + 'px'
+                + ' Border: ' + boxBorder + 'px'
+        }
+    </script>
+</body>
+</html>

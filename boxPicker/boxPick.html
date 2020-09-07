@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            margin-top:20px;
+            background-color:blanchedalmond;
+
+        }
+
+        #boxA,#boxB,#boxC,#boxD,#boxE{
+            margin-left:650px;
+            width:200px;
+            height:80px;
+            text-align:center;
+            margin-bottom:10px;
+            background-color:cadetblue;
+
+        }
+
+        #stiler {
+            height:30px;
+            width:315px;
+            background-color:darkseagreen;
+            text-align:center;
+            margin-left:590px;
+            margin-top:20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="boxA" onclick="valg(this);">Box 1</div>
+    <div id="boxB" onclick="valg(this);">Box 2</div>
+    <div id="boxC" onclick="valg(this);">Box 3</div>
+    <div id="boxD" onclick="valg(this);">Box 4</div>
+    <div id="boxE" onclick="valg(this);">Box 5</div>
+    
+    <div id="stiler">
+        <input id="color" type="checkbox" onchange="toggler(this);">Color</input>
+        <input id="color" type="checkbox" onchange="toggler(this);">Color</input>
+        <input id="color" type="checkbox" onchange="toggler(this);">Color</input>
+        <input id="color" type="checkbox" onchange="toggler(this);">Color</input>
+        <input id="color" type="checkbox" onchange="toggler(this);">Color</input>
+    </div>
+    <script>
+
+        var color = document.getElementById('color')
+    </script>
+</body>
+</html>
